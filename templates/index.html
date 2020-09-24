@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {font-family: "Lato", sans-serif}
+		.mySlides {display: none}
+	</style>
+</head>
+<body>
+	<div class="w3-content" style="max-width:100%">
+		<img src="https://i2.wp.com/focusanalytics.focus-economics.com/wp-content/uploads/2019/05/Blue-Wallpaper-55-4000x3000.jpg?fit=4000%2C3000&ssl=1" style="height:500px;width:100%">
+		<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small" style="margin-bottom: 30%">
+			<h1>PASSWORD GENERATOR AND ENCRYPTOR</h1>
+			<h4><b>Generate Your Password and Secure It With Encryption</b></h4>   
+		</div>
+		<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+			<h2 class="w3-wide w3-center">Generate Password</h2>
+			<form method="POST">
+				<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+					<label><h4>Password Length:</h4></label>
+					<input class="w3-input w3-border" type="number" min="4" name="plength" id="plength" placeholder="Enter Password Length"><br>
+					<h4>Select Password Criteria:</h4>
+					<label >Must Add number</label>
+					<input type='hidden' value="False" name='num_false_param'>
+					<input type="checkbox" name="num_param" value="True"><br>
+					<label >Must Add Special Character</label>
+					<input type='hidden' value="False" name='char_false_param'>
+					<input type="checkbox" name="char_param" value="True"><br>
+					<label >Must Add UpperCase Alphabet</label>
+					<input type='hidden' value="False" name='up_false_param'>
+					<input type="checkbox" name="up_param" value="True"><br>
+					<label >Must Add LowerCase Alphabet</label>
+					<input type='hidden' value="False" name='lw_false_param'>
+					<input type="checkbox" name="lw_param" value="True"><br>
+					<button class="w3-button w3-black w3-section" type="submit" name="action" value="act1">Generate Password</button>
+				</div>
+			</form>
+			<text style="font-size: 20px">Generated Password  :   </text> <text style="font-size: 18px;color:grey;">{{x}}</text>
+			<br><text style="font-size: 20px">Password After Encryption: </text><text style="font-size: 18px;color:grey;">{{y}}</text><br>
+			<text style="font-size: 20px">Key for encryption :</text> <text style="font-size: 18px;color:grey;">{{z}}</text><br>
+			<text style="font-size: 20px">vector for encryption : </text><text style="font-size: 18px;color:grey;">{{a}}</text>
+		</div>
+		<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<p class="w3-medium">Created By <a href="https://www.linkedin.com/in/ruparna30/" target="_blank">Ruchan</a></p>
+	</footer>
+	</body>
+	</html>
